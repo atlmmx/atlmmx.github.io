@@ -1,0 +1,175 @@
+/* styles.css */
+body,
+html {
+  margin: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+}
+
+.nav-links a {
+  color: #1a1a1a;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.main-content-spotify {
+  display: flex;
+  color: #fff;
+  padding: 0 20px;
+  text-align: center;
+  align-items: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 40px);
+  background-position: center;
+  background-image: url("./images/landing.jpg");
+}
+
+.main-content-spotify h1 {
+  font-size: 64px;
+  line-height: 66px;
+  letter-spacing: 1.5px;
+}
+
+.main-content-spotify p {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.5px;
+}
+
+.features {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.whatSpotify {
+  color: #1a1a1a;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+span.green-underline {
+  border-bottom: 3px solid #00b172;
+  display: inline;
+}
+
+span.white-underline {
+  border-bottom: 3px solid #FFF;
+  display: inline;
+}
+
+.features h2 {
+  color: #00b172;
+  margin-bottom: 30px;
+}
+
+.feature-item {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.5%;
+}
+
+.feature-item img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  color: #00b172;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.feature-item p {
+  color: #1a1a1a;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .feature-item {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+/* Caracteristicas de Spotify */
+
+.spotify-feature {
+    margin-left: auto; 
+  margin-right: auto;
+  max-width: 90%;
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  background: #00b172;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.spotify-logo {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.spotify-text h1 {
+  font-size: 40px;
+}
+
+.spotify-action h2 {
+  font-size: 32px;
+}
+
+.spotify-action p {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.spotify-image {
+  max-width: 300px;
+}
+
+.spotify-device {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .spotify-feature {
+    flex-direction: column;
+  }
+
+  .spotify-text,
+  .spotify-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .spotify-logo {
+    margin: 0 auto 20px;
+  }
+
+  .spotify-image {
+    margin-top: 20px;
+  }
+}
